@@ -4,7 +4,8 @@ services:
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn backend.app:app
+    startCommand: gunicorn app:app --bind 0.0.0.0:10000 --workers 4 --threads 8
+    workingDir: backend
     envVars:
       - key: PYTHON_VERSION
         value: 3.11
