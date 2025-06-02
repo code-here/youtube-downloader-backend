@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+downloads/
+*.pyc
+.DS_Store
+venv/
+downloads/
+__pycache__/
+*.pyc
+.DS_Store
